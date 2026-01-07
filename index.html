@@ -2,201 +2,233 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leela Sai Kumar | Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Poppins, Arial, sans-serif
-        }
-
-        body {
-            background: #0f172a;
-            color: #e5e7eb
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit
-        }
-
-
-        header {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #38bdf8
-        }
-
-        header span {
-            color: #22c55e
-        }
-
-        header p {
-            margin: 15px 0;
-            font-size: 1.2rem;
-            max-width: 600px
-        }
-
-        .btns {
-            margin-top: 20px
-        }
-
-        .btn {
-            padding: 12px 25px;
-            border-radius: 30px;
-            margin: 10px;
-            font-weight: bold
-        }
-
-        .primary {
-            background: #38bdf8;
-            color: #020617
-        }
-
-        .secondary {
-            border: 2px solid #38bdf8;
-            color: #38bdf8
-        }
-
-
-        section {
-            padding: 80px 10%
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #38bdf8;
-            font-size: 2.2rem
-        }
-
-
-        .about p {
-            text-align: center;
-            max-width: 800px;
-            margin: auto;
-            font-size: 1.1rem;
-            line-height: 1.8
-        }
-
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px
-        }
-
-        .skill {
-            background: #020617;
-            padding: 20px;
-            text-align: center;
-            border-radius: 12px
-        }
-
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px
-        }
-
-        .project {
-            background: #020617;
-            padding: 25px;
-            border-radius: 15px
-        }
-
-        .project h3 {
-            color: #7dd3fc;
-            margin-bottom: 10px
-        }
-
-        .contact {
-            text-align: center
-        }
-
-        .contact a {
-            display: inline-block;
-            margin: 10px 15px;
-            color: #38bdf8;
-            font-weight: bold
-        }
-
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leela Sai Kumar Meda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>Hi, I'm <span>Leela Sai Kumar</span></h1>
-        <p>Java & Web Developer passionate about building clean and functional web applications.</p>
-        <div class="btns">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="#contact" class="btn secondary">Contact Me</a>
+    <div class="navigation">
+        <h1><a href="MyPortfolio.html">Home</a></h1>
+        <h1><a href="#aboutme">About</a></h1>
+        <h1><a href="#projects">Projects</a></h1>
+        <h1><a href="#education">Education</a></h1>
+        <h1><a href="#connect">Contact</a></h1>
+    </div>
+    <div class="role">
+        <div class="intro">
+            <h5>Full Stack Developer</h5>
+            <h1>Leela Sai Kumar Meda</h1>
+            <p>
+                Fresh graduate building web applications with <br>JavaScript, Java, and SQL.<br> Passionate about learning and creating impactful solutions.
+            </p>
         </div>
-    </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a recent graduate focusing on Core Java, JDBC, JSP, and Web Development.
-            I enjoy building real-world projects and continuously improving my skills.
-        </p>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">Java</div>
-            <div class="skill">JDBC</div>
-            <div class="skill">Hibernate</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">MySQL</div>
+        <div class="buttons">
+            <a href="#connect" >Get In Touch</a>
+            <a href="#projects" id="mywork">See My Work</a>
         </div>
-    </section>
+    </div>
+    <div class="aboutme" id="aboutme">
+        <h1>About</h1>
+        <h1 style="color: #3b82f6;">Me</h1>
+    </div>
+    <div class="about" id="about">
+        <div class="me">
+     <h3>Hello👋!</h3>
+     <p>I'm a recent computer science graduate passionate about building full stack <br>web applications. I enjoy working with modern technologies and solving <br>real-world problems through code.</p>
+     <p>During my academic journey, I've worked on multiple <br> projects involving frontend development with JavaScript, backend services with Java, and database design with SQL.</p>
+     <p>I'm eager to grow as a developer, contribute to meaningful <br> projects, and learn from experienced professionals in the <br> industry.</p>
+      <h3>Recent Graduate</h3>  
+      <p>B.Tech in Computer Science (2025)</p>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Food Delivery Web App</h3>
-                <p>HTML, CSS, JSP, JDBC, MySQL based web app with admin panel and order management.</p>
-            </div>
-            <div class="project">
-                <h3>Weather App</h3>
-                <p>JavaScript application using OpenWeather API to show real-time weather details.</p>
-            </div>
-            <div class="project">
-                <h3>Calculator</h3>
-                <p>Simple calculator built using HTML, CSS and JavaScript.</p>
-            </div>
+        <h3>Java Full-Stack</h3>  
+      <p>JDBC,SERVLETS,JSP,HIBERNATE ORM</p>
+
+        <h3>2 Projects</h3>  
+      <p>Full stack web applications</p>
+
+        <h3>Quick Learner</h3>  
+      <p>Always exploring new technologies</p>
+    
+    </div>
+        <div class="technical">
+            <h3 style="color: #3b82f6; ">Technical <h3 style="color: #10b981;">Skills</h3></h3>
+            <h4>FRONTEND</h4>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+            <span>BOOTSTRAP</span>
+            <h4>BACKEND</h4>
+            <span>JDBC</span>
+            <span>SERVLETS</span>
+            <span>JSP</span>
+            <span>HIBERNATE ORM</span>
+             <h4>DATABASES</h4>
+            <span>SQL</span>
+              <h4>TOOLS</h4>
+            <span>VS CODE</span>
+            <span>ECLIPSE</span>
         </div>
-    </section>
+    </div>
+    <div class="projects" id="projects">
+                <h1>My Projects</h1>
+                  <div class="container">
+                <div class="card">
+                    <div class="name">
+                        <h3> 🩺 Online Doctor Consulting System</h3>
+                        <p>A full stack system that enables patients to upload symptoms and receive medical advice from doctors online.</p>
+                    </div>
+                    <div class="desc">
+                        <span>JAVA</span>
+                        <span>SQL</span>
+                        <span>HTML&CSS</span>
+                        <p>Developed an online doctor consulting platform where patients can register, log in, and upload their health symptoms in text or form format. Doctors review the submitted symptoms and provide medical suggestions, prescriptions, or guidance online. The system supports secure authentication, patient–doctor interaction, and role-based access with a simple and clean UI.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="name">
+                        <h3>🍔 Food Delivery Application</h3>
+                        <p>A full stack system that enables patients to upload symptoms and receive medical advice from doctors online.</p>
+                    </div>
+                    <div class="desc">
+                        <span>JAVA</span>
+                        <span>SQL</span>
+                        <span>HTML&CSS</span>
+                        <p>A food delivery application where users can register, log in, browse food items, add them to cart, place orders, and view order history. Admins can manage food items and orders. The project is presented in a responsive portfolio designed using pure HTML and CSS.</p>
+                        <!-- <p>Developed an online doctor consulting platform where patients can register, log in, and upload their health symptoms in text or form format. Doctors review the submitted symptoms and provide medical suggestions, prescriptions, or guidance online. The system supports secure authentication, patient–doctor interaction, and role-based access with a simple and clean UI.</p> -->
+                    </div> 
+                </div>
+                <div class="card">
+                     <div class="name">
+                        <h3>🌐 Personal Portfolio Website</h3>
+                        <p>A responsive personal portfolio website to showcase my projects, skills, and contact details.</p>
+                    </div>
+                    <div class="desc">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                       <p>Designed and developed a personal portfolio website using pure HTML and CSS to showcase my projects, technical skills, and profile. The site includes project cards with descriptions, technology tags, and links to Live Demo and GitHub.</p>
+                        <!-- <p>Developed an online doctor consulting platform where patients can register, log in, and upload their health symptoms in text or form format. Doctors review the submitted symptoms and provide medical suggestions, prescriptions, or guidance online. The system supports secure authentication, patient–doctor interaction, and role-based access with a simple and clean UI.</p> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <a href="mailto:leelasaikumarmeda501@gmail.com">leelasaikumarmeda501@gmail.com</a>
-        <a href="https://github.com/leelasaikumar123">GitHub</a>
-        <a href="https://www.linkedin.com/in/leela-sai-kumar-meda-a79aba330/">LinkedIn</a>
-    </section>
+    <div class="projects">
+                <h1> My Mini Projects</h1>
+                  <div class="container">
+                <div class="card">
+                    <div class="name">
+                        <h3> ✅ To-Do List Application</h3>
+                        <p>A simple task management application showcased on a portfolio built using HTML and CSS.</p>
+                    </div>
+                    <div class="desc">
+                        <span>JAVASCRIPT</span>
+                        <span>HTML</span>
+                        <span>HTML</span>
+                        <p>Developed a to-do list application that allows users to add, delete, and manage daily tasks efficiently. Implemented interactive UI behavior using JavaScript, while the project is presented inside a clean and responsive portfolio designed with HTML and CSS.</p>
+                        <!-- <p>Developed an online doctor consulting platform where patients can register, log in, and upload their health symptoms in text or form format. Doctors review the submitted symptoms and provide medical suggestions, prescriptions, or guidance online. The system supports secure authentication, patient–doctor interaction, and role-based access with a simple and clean UI.</p> -->
+                    </div>
+                    <a href="https://github.com/leelasaikumar123/To-Do-List">Git Hub</a>
+                    <a href="https://leelasaikumar123.github.io/To-Do-List/">Live</a>
+                </div>
+                <div class="card">
+                    <div class="name">
+                        <h3>🧮 Calculator Application</h3>
+                        <p>A basic calculator application showcased on a portfolio built using HTML and CSS.</p>
+                    </div>
+                    <div class="desc">
+                        <span>JAVASCRIPT</span>
+                        <span>HTML</span>
+                        <span>HTML</span>
+                        <p>Built a calculator application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. JavaScript handles the logic, while the UI is simple, responsive, and displayed as part of an HTML and CSS portfolio website.</p>
+                        <!-- <p>A food delivery application where users can register, log in, browse food items, add them to cart, place orders, and view order history. Admins can manage food items and orders. The project is presented in a responsive portfolio designed using pure HTML and CSS.</p> -->
+                        <!-- <p>Developed an online doctor consulting platform where patients can register, log in, and upload their health symptoms in text or form format. Doctors review the submitted symptoms and provide medical suggestions, prescriptions, or guidance online. The system supports secure authentication, patient–doctor interaction, and role-based access with a simple and clean UI.</p> -->
+                    </div> 
+                    <a href="https://github.com/leelasaikumar123/Calculator">Git Hub</a>
+                    <a href="https://leelasaikumar123.github.io/Calculator/">Live</a>
+                </div>
+                <div class="card">
+                     <div class="name">
+                        <h3>🌦️ Weather Application (API Based)</h3>
+                        <p>A weather application that fetches real-time data using an external API, showcased on a portfolio built with HTML and CSS.</p>
+                    </div>
+                    <div class="desc">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVASCRIPT</span>
+                        <p>Created a weather application that fetches real-time weather data based on user input using a public weather API. Displays temperature, weather conditions, and location details. The project is showcased inside a responsive portfolio built using HTML and CSS.</p>
+                       <!-- <p>Designed and developed a personal portfolio website using pure HTML and CSS to showcase my projects, technical skills, and profile. The site includes project cards with descriptions, technology tags, and links to Live Demo and GitHub.</p> -->
+                        <!-- <p>Developed an online doctor consulting platform where patients can register, log in, and upload their health symptoms in text or form format. Doctors review the submitted symptoms and provide medical suggestions, prescriptions, or guidance online. The system supports secure authentication, patient–doctor interaction, and role-based access with a simple and clean UI.</p> -->
+                    </div>
+                    <a href="https://github.com/leelasaikumar123/WeatherAPI">Git Hub</a>
+                    <a href="https://leelasaikumar123.github.io/WeatherAPI/">Live</a>
+                </div>
+                
+            </div>
+            </div>
+            <div class="education" id="education">
+                <span><span>Education &</span>
+                <span style="color: #3b82f6;">Certifications</span></span>
+               
+                <div>
+                    <span style="color: #10b981;">2025</span>
+                    <span>JAVA FULL-STACK</span>
+                    <p>TAP ACADEMY </p>
+                </div>
+               
+                  <div>
+                    <span style="color: #10b981;">2021-2025</span>
+                    <span>B.Tech in Computer Science</span>
+                    <p>Malineni Perumallu Educational Society's Group of Institutions | CGPA:8.0</p>
+                </div>
+                
+                  <div>
+                    <span style="color: #10b981;">2019-2021</span>
+                    <span>Intermediate in MPC</span>
+                    <p>Narayana Junior College | Percentage:96.8%</p>
+                </div>
+                <div>
+                    <span style="color: #10b981;">2018-2019</span>
+                    <span>10th Class</span>
+                    <p>Sree Narayana High School | CGPA:9.2</p>
+                </div>
+               
+            </div>
+            <div class="details" id="connect">
+                <h1>Let's Connect</h1>
+                <div>
+                    <div>
+                        <h1>📧 Email</h1>
+                        <p>leelasaikumarmeda501@gmail.com</p>
+                    </div>
+                    <div>
+                        <h1>
+                        📱 Phone
+                        </h1>
+                        <p>+91 9381822209</p>
+                    </div>
+                    <div>
+                             <h1>
+                        📍 Location
+                        </h1>
+                        <p>Bengaluru,India</p>
+                    </div>
+                </div>
+                <p>I'm actively looking for opportunities to start my career as a full stack <br> developer. Feel free to reach out for collaborations or just to say hello!</p>
+             <div>
+                 <a href="https://www.linkedin.com/in/leela-sai-kumar-meda-a79aba330">in</a>
+            <a href="https://github.com/leelasaikumar123">gh</a>
+             </div>
+            
+            </div>
 
-
-
+            <footer>
+                <h4>© 2025 Leela Sai Kumar Meda. All rights reserved. | Open for opportunities!</h4>
+            </footer>
 </body>
 
-
 </html>
+
